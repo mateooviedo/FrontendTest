@@ -1,0 +1,144 @@
+body {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  background-color: #EFEFEF;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", 'Roboto', "Helvetica Neue", Arial, sans-serif;
+}
+
+.main {
+  padding: 10px;
+  background-color: white;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px -11px rgba(0,0,0,0.75);
+}
+
+.main__search {
+  margin: 20px 30px;
+}
+
+.main__search--input {
+  width: 260px;
+  height: 30px;
+}
+
+::placeholder {
+  padding-left: 10px;
+  color: #B8B4B4;
+}
+
+.main__search--button {
+  height: 35px;
+  width: 69px;
+  border: 1px solid #B8B4B4;
+  border-radius: 3px;
+  background: linear-gradient(#F1EFEF, #E7E7E7, #CBCBCB);
+  font-weight: bold;
+}
+
+.container {
+  margin: 20px 30px;
+}
+
+.container.container_hide {
+  display: none;
+}
+
+.container__profile{
+  display: flex;
+  flex-direction: row;
+}
+
+.container__profile--image {
+  width: 78px;
+  height: 78px;
+  margin-right: 10px;
+}
+
+.container__profile-details i, h1, p {
+  margin: 0px 0px 0px 10px;
+  font-size: 14px;
+}
+
+.profile-details__name {
+  font-size: 30px;
+}
+
+.profile-details__biography {
+  width: 30%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+hr {
+  margin: 0px;
+}
+
+.repos__list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  overflow-y: auto;
+  height: 250px;
+}
+
+.repos__list > li {
+  border-bottom: 1px solid;
+}
+
+.repo__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+
+.repo__item h3 {
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.repo__item-details {
+  display: flex;
+  align-items: center;
+}
+
+.repo__item-details > img {
+  width: 15px;
+  height: 15px;
+}
+
+.repo__item-details p {
+  margin: 3px;
+  font-size: 13px;
+}
+
+.repo__item-details .fork-image {
+  width: 10px;
+}
+
+.error {
+  border: 1px solid #E7B9B9;
+  background-color: #F6D4D4;
+  border-radius: 2px;
+  margin: 20px 30px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.error.error_hide {
+  display: none;
+}
+
+.error p {
+  color: #933838;
+  margin: 10px;
+  font-size: 15px;
+}
